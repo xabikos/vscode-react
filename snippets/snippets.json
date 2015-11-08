@@ -1,0 +1,119 @@
+{
+  "reactClassCompoment": {
+    "prefix": "rcc",
+    "body": "import React, {Component} from 'react';\n\nclass $1 extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$2\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default $1;",
+    "description": "Creates a React component class with ES6 module system",
+    "scope": "source.js -(meta)"
+  },
+  
+  "reactClassCompomentPropTypes": {
+    "prefix": "rccp",
+    "body": "import React, {Component, PropTypes} from 'react';\n\nclass $1 extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$2\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n$1.propTypes = {\n\n}\n\nexport default $1;",
+    "description": "Creates a React component class with PropTypes and ES6 nodule system",
+    "scope": "source.js -(meta)"
+  },
+  
+  "reactClassCompomentWithMethods": {
+    "prefix": "rcfc",
+    "body": "import React, {Component, PropTypes} from 'react';\n\nclass $1 extends Component {\n\tconstructor(props) {\n\tsuper(props);\n\n\t}\n\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\n\t}\n\n\tcomponentWillReceiveProps(nextProps) {\n\n\t}\n\n\tshouldComponentUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate(prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n$1.propTypes = {\n\n}\n\nexport default $1;",
+    "description": "Creates a React component class with PropTypes and all lifecycle methods in ES6 nodule system",
+    "scope": "source.js -(meta)"
+  },
+  
+   "classConstructor": {
+    "prefix": "con",
+    "body": "constructor(props) {\n\tsuper(props);\n\t$1\n}\n",
+    "description": "Adds a default construcotr for the class"
+  },
+  
+  "componentWillMount": {
+		"prefix": "cwm",
+		"body": "\ncomponentWillMount() {\n\t${0}\n}\n",
+		"description": "Invoked once, both on the client and server, immediately before the initial rendering occurs",
+		"scope": "source.js meta.group.braces.round meta.group.braces.curly -(meta meta meta)"
+	},
+  
+  "componentDidMount": {
+    "prefix": "cdm",
+    "body": "componentDidMount() {\n\t${0}\n}\n",
+    "description": "Invoked once, only on the client (not on the server), immediately after the initial rendering occurs.",
+    "scope": "source.js meta.group.braces.round meta.group.braces.curly -(meta meta meta)"
+  },
+  
+  "componentWillReceiveProps": {
+    "prefix": "cwr",
+    "body": "componentWillReceiveProps(nextProps) {\n\t${0}\n}\n",
+    "description": "Invoked when a component is receiving new props. This method is not called for the initial render.",
+    "scope": "source.js meta.group.braces.round meta.group.braces.curly -(meta meta meta)"
+  },
+  
+  "shouldComponentUpdate": {
+    "prefix": "scu",
+    "body": "shouldComponentUpdate(nextProps, nextState) {\n\t${0}\n}\n",
+    "description": "Invoked before rendering when new props or state are being received. ",
+    "scope": "source.js meta.group.braces.round meta.group.braces.curly -(meta meta meta)"
+  },
+  
+  "componentWillUpdate": {
+    "prefix": "cwup",
+    "body": "componentWillUpdate(nextProps, nextState) {\n\t${0}\n}\n",
+    "description": "Invoked immediately before rendering when new props or state are being received.",
+    "scope": "source.js meta.group.braces.curly -(meta meta meta)"
+  },
+  
+  "componentDidUpdate": {
+    "prefix": "cdup",
+    "body": "componentDidUpdate(prevProps, prevState) {\n\t$1\n}\n",
+    "description": "Invoked immediately after the component's updates are flushed to the DOM.",
+    "scope": "source.js meta.group.braces.round meta.group.braces.curly -(meta meta meta)"
+  },
+
+  "componentWillUnmount": {
+    "prefix": "cwun",
+    "body": "componentWillUnmount() {\n\t$1\n}\n",
+    "description": "Invoked immediately before a component is unmounted from the DOM.",
+    "scope": "source.js meta.group.braces.round meta.group.braces.curly -(meta meta meta)"
+  },
+  
+   "componentRender": {
+    "prefix": "ren",
+    "body": "render() {\n\treturn (\n\t\t<div>\n\t\t\t${0}\n\t\t</div>\n\t);\n}",
+    "description": "When called, it should examine this.props and this.state and return a single child element.",
+    "scope": "source.js meta.group.braces.round meta.group.braces.curly -(meta meta meta), source.js meta.class.js -(meta meta)"
+  },
+  
+  "componentSetStateObject": {
+    "prefix": "sso",
+    "body": "this.setState({$1: $2);\n",
+    "description": "Performs a shallow merge of nextState into current state",
+    "scope": "source.js"
+  },
+  
+  "componentSetStateFunc": {
+    "prefix": "ssf",
+    "body": "this.setState(1:(state, props) => ${0}});\n",
+    "description": "Performs a shallow merge of nextState into current state",
+    "scope": "source.js"
+  },
+  
+  "componentProps": {
+    "prefix": "props",
+    "body":"this.props.",
+    "description": "Access component's props",
+    "scope": "source.js"
+  },
+	
+	"componentState": {
+		"prefix": "state",
+		"body": "this.state.",
+		"description": "Access component's state",
+		"scope": "source.js"
+	},
+  
+  "bindThis": {
+		"prefix": "bnd",
+		"body": "this.$1 = this.$1.bind(this);",
+		"description": "Access component's state",
+		"scope": "source.js"
+	}
+}
