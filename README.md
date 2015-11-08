@@ -1,9 +1,7 @@
 # Reactjs
 ## VS Code Reactjs snippets 
 -------------------
-This extension contains code snippets for [Reactjs][react] and is based on 
-the awesome [babel-sublime-snippets][babelsublime] package.
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+This extension contains code snippets for [Reactjs][react] and is based on the awesome [babel-sublime-snippets][babelsublime] package.
 
 ## Installation
 
