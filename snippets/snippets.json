@@ -95,21 +95,21 @@
     "description": "Performs a shallow merge of nextState into current state",
     "scope": "source.js"
   },
-  
+
   "componentProps": {
     "prefix": "props",
     "body":"this.props.",
     "description": "Access component's props",
     "scope": "source.js"
   },
-	
+
 	"componentState": {
 		"prefix": "state",
 		"body": "this.state.",
 		"description": "Access component's state",
 		"scope": "source.js"
 	},
-  
+
   "bindThis": {
 		"prefix": "bnd",
 		"body": "this.$1 = this.$1.bind(this);",
