@@ -8,6 +8,13 @@ This extension contains code snippets for [Reactjs][react] and is based on the a
 In order to install an extension you need to launch the Command Pallete (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
 There you have either the option to show the already installed snippets or install new ones.
 
+## Usage
+When installing the extension React development could be really fun 
+![create react component](images/component.gif)
+
+## JavaScript snippets
+Except the snippets described below you can use all the [JavaScript snippets from the corresponding extension][javacript]
+
 ## Snippets
 
 Below is a list of all available snippets and the triggers of each one. The **â‡¥** means the `TAB` key.
@@ -35,3 +42,4 @@ Below is a list of all available snippets and the triggers of each one. The **â‡
 
 [react]: https://facebook.github.io/react/
 [babelsublime]: https://github.com/babel/babel-sublime-snippets
+[javacript]: https://github.com/xabikos/vscode-javascript
