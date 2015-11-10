@@ -4,7 +4,7 @@
 	"version": "0.0.1",
   "displayName": "Reactjs code snippets",
 	"publisher": "xabikos",
-  "icon": "images/react.svg",
+  "icon": "images/react.png",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
