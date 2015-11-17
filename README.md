@@ -12,6 +12,8 @@ There you have either the option to show the already installed snippets or insta
 When installing the extension React development could be really fun 
 ![create react component](images/component.gif)
 
+In order for the snippets to be available you need to either have the extension jsx to the source files or to select the JavaScript React language for the available options in the bottom right menu.
+
 ## JavaScript snippets
 Except the snippets described below you can use all the [JavaScript snippets from the corresponding extension][javacript]
 
@@ -38,6 +40,10 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `props→` | `this.props` |
 | `state→` | `this.state` |
 | `bnd→`   | `binds the this of method inside the constructor` |
+
+## Known issues
+
+Currently the available snippets are not shown automatically as it happens for JavaScript snippets. You can bypass that by hitting Ctrl + Space or Cmd + Space based on the operating system. This is a known issue and will be fixed in the upcoming versions. 
 
 
 [react]: https://facebook.github.io/react/
