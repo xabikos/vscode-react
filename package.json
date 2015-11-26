@@ -21,10 +21,14 @@
   ],
   "contributes": {
     "snippets": [
-	  {
+      {
         "language": "javascriptreact",
         "path": "./snippets/snippets.json"
-	  }
+	    },
+      {
+        "language": "jsx",
+        "path": "./snippets/snippets.json"
+	    }
     ]
   }
 }
