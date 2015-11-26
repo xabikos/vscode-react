@@ -41,11 +41,6 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `state→` | `this.state` |
 | `bnd→`   | `binds the this of method inside the constructor` |
 
-## Known issues
-
-Currently the available snippets are not shown automatically as it happens for JavaScript snippets. You can bypass that by hitting Ctrl + Space or Cmd + Space based on the operating system. This is a known issue and will be fixed in the upcoming versions. 
-
-
 [react]: https://facebook.github.io/react/
 [babelsublime]: https://github.com/babel/babel-sublime-snippets
 [javacript]: https://github.com/xabikos/vscode-javascript
