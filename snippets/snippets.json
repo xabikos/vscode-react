@@ -7,13 +7,13 @@
   
   "reactClassCompomentPropTypes": {
     "prefix": "rccp",
-    "body": "import React, {Component, PropTypes} from 'react';\n\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n}\n\nexport default ${1:componentName};",
+    "body": "import React, {Component, PropTypes} from 'react';\n\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
     "description": "Creates a React component class with PropTypes and ES6 nodule system"
   },
   
   "reactClassCompomentWithMethods": {
     "prefix": "rcfc",
-    "body": "import React, {Component, PropTypes} from 'react';\n\nclass ${1:componentName} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t}\n\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\n\t}\n\n\tcomponentWillReceiveProps(nextProps) {\n\n\t}\n\n\tshouldComponentUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate(prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n}\n\nexport default ${1:componentName};",
+    "body": "import React, {Component, PropTypes} from 'react';\n\nclass ${1:componentName} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t}\n\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\n\t}\n\n\tcomponentWillReceiveProps(nextProps) {\n\n\t}\n\n\tshouldComponentUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate(prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
     "description": "Creates a React component class with PropTypes and all lifecycle methods in ES6 nodule system"
   },
   
@@ -108,7 +108,7 @@
   },
   "importDestructing": {
     "prefix": "imd",
-    "body": "import { $1 } from '${2:module}';$0",
+    "body": "import {$1} from '${2:module}';$0",
     "description": "Imports only a portion of the module in ES6 syntax"
   },  
   "importEverything": {
