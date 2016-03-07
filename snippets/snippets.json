@@ -17,6 +17,17 @@
     "description": "Creates a React component class with PropTypes and all lifecycle methods in ES6 nodule system"
   },
   
+  "reactStateless": {
+    "prefix": "rsc",
+    "body": "import React from 'react';\n\nconst ${1:componentName} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n}\n\nexport default ${1:componentName};",
+    "description": "Creates a stateless React component without PropTypes in ES6 nodule system"
+  },
+  "reactStatelessProps": {
+    "prefix": "rscp",
+    "body": "import React, {PropTypes} from 'react';\n\nconst ${1:componentName} = (props) => {\n\treturn (\n\t\t<div>\n\t\t\t$1\n\t\t</div>\n\t);\n}\n\n${1:componentName}.propTypes = {\n\t$0\n}\n\nexport default ${1:componentName};",
+    "description": "Creates a stateless React component with PropTypes in ES6 nodule system"
+  },
+  
    "classConstructor": {
     "prefix": "con",
     "body": "constructor(props) {\n\tsuper(props);\n\t$0\n}\n",
