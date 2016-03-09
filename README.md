@@ -25,7 +25,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | -------: | ------- |
 | `rcc→`   | class component skeleton |
 | `rccp→`  | class component skeleton with prop types after the class |
-| `rcfp→`  | class component skeleton that contains all the lifecycle methods |
+| `rcfc→`  | class component skeleton that contains all the lifecycle methods |
 | `con→`   | class default constructor |
 | `cwm→`   | `componentWillMount method` |
 | `cdm→`   | `componentDidMount method` |
@@ -35,7 +35,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `cdup→`  | `componentDidUpdate method` |
 | `cwun→`  | `componentWillUnmount method` |
 | `ren→`   | `render method` |
-| `sso→`   | `this.setState with object as parameter` |
+| `sst→`   | `this.setState with object as parameter` |
 | `ssf→`   | `this.setState with function as parameter` |
 | `props→` | `this.props` |
 | `state→` | `this.state` |
