@@ -29,7 +29,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rccp→`  | class component skeleton with prop types after the class |
 | `rcfc→`  | class component skeleton that contains all the lifecycle methods |
 | `rsc→`   | stateless component skeleton |
-| `rscπ→`  | stateless component with prop types skeleton |
+| `rscp→`  | stateless component with prop types skeleton |
 | `con→`   | class default constructor |
 | `cwm→`   | `componentWillMount method` |
 | `cdm→`   | `componentDidMount method` |
