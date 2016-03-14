@@ -5,6 +5,12 @@
     "description": "Creates a React component class with ES6 module system"
   },
   
+  "reactJustClassCompoment": {
+    "prefix": "rcjc",
+    "body": "class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n",
+    "description": "Creates a React component class with ES6 module system"
+  },
+  
   "reactClassCompomentPropTypes": {
     "prefix": "rccp",
     "body": "import React, {Component, PropTypes} from 'react';\n\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
