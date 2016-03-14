@@ -28,10 +28,15 @@
     "description": "Creates a stateless React component with PropTypes in ES6 nodule system"
   },
   
-   "classConstructor": {
+  "classConstructor": {
     "prefix": "con",
     "body": "constructor(props) {\n\tsuper(props);\n\t$0\n}\n",
-    "description": "Adds a default construcotr for the class"
+    "description": "Adds a default construcotr for the class that contains props as arguments"
+  },
+  "classConstructorContext": {
+    "prefix": "conc",
+    "body": "constructor(props, context) {\n\tsuper(props, context);\n\t$0\n}\n",
+    "description": "Adds a default construcotr for the class that contains props and context as arguments"
   },
   
   "componentWillMount": {
