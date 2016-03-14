@@ -27,10 +27,12 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | -------: | ------- |
 | `rcc→`   | class component skeleton |
 | `rccp→`  | class component skeleton with prop types after the class |
+| `rcjc→`  | class component skeleton without import and default export lines |
 | `rcfc→`  | class component skeleton that contains all the lifecycle methods |
 | `rsc→`   | stateless component skeleton |
 | `rscp→`  | stateless component with prop types skeleton |
-| `con→`   | class default constructor |
+| `con→`   | class default constructor with props|
+| `conc→`  | class default constructor with props and context |
 | `cwm→`   | `componentWillMount method` |
 | `cdm→`   | `componentDidMount method` |
 | `cwr→`   | `componentWillReceiveProps method` |
