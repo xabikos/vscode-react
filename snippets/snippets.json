@@ -101,7 +101,7 @@
   
   "componentSetStateFunc": {
     "prefix": "ssf",
-    "body": "this.setState($1:(state, props) => $0});\n",
+    "body": "this.setState((state, props) => { return { $0 }});\n",
     "description": "Performs a shallow merge of nextState into current state"
   },
 
