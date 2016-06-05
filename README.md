@@ -8,6 +8,16 @@ This extension contains code snippets for [Reactjs][react] and is based on the a
 In order to install an extension you need to launch the Command Pallete (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
 There you have either the option to show the already installed snippets or install new ones.
 
+## Supported languages (file extensions)
+* JavaScript (.js)
+* TypeScript (.ts)
+* JavaScript React (.jsx)
+* TypeScript React (.tsx)
+
+## Breaking change in version 1.0.0
+Up until verion 1.0.0 all the [JavaScript snippets][javacript] where part of the extension. In order to avoid duplication
+the snippets are now included only to this extension and if you want to use them you have to install it explicitly. 
+
 ## Usage
 When installing the extension React development could be really fun 
 ![create react component](images/component.gif)
@@ -16,8 +26,6 @@ As VS Code from version 0.10.10 supports React components syntax inside js files
 In the following example you can see the usage of a React stateless component with prop types snippets inside a js and not jsx file.
 ![create react stateless component](images/stateless.gif)
 
-## JavaScript snippets
-Except the snippets described below you can use all the [JavaScript snippets from the corresponding extension][javacript]
 
 ## Snippets
 
