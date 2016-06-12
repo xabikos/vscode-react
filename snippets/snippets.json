@@ -49,7 +49,7 @@
     "prefix": "est",
     "body": "this.state = {\n\t$1\n};",
     "description": "Creates empty state object. To be used in a constructor."
-  }
+  },
   
   "componentWillMount": {
     "prefix": "cwm",
