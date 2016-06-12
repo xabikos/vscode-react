@@ -45,6 +45,12 @@
     "description": "Adds a default construcotr for the class that contains props and context as arguments"
   },
   
+  "emptyState": {
+    "prefix": "est",
+    "body": "this.state = {\n\t$1\n};",
+    "description": "Creates empty state object. To be used in a constructor."
+  }
+  
   "componentWillMount": {
     "prefix": "cwm",
     "body": "\ncomponentWillMount() {\n\t$0\n}\n",
@@ -121,6 +127,12 @@
     "prefix": "bnd",
 	"body": "this.$1 = this.$1.bind(this);$0",
 	"description": "Access component's state"
+  },
+  
+  "propTypes": {
+	"prefix": "rpt",
+	"body": "$1.propTypes = {\n\t$2\n};",
+	"description": "Creates empty propTypes declaration"
   },
   
   "propTypeArray": {
