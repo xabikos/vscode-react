@@ -1,5 +1,5 @@
 # Reactjs
-## VS Code Reactjs snippets 
+## VS Code Reactjs snippets
 -------------------
 This extension contains code snippets for [Reactjs][react] and is based on the awesome [babel-sublime-snippets][babelsublime] package.
 
@@ -16,10 +16,10 @@ There you have either the option to show the already installed snippets or insta
 
 ## Breaking change in version 1.0.0
 Up until verion 1.0.0 all the [JavaScript snippets][javacript] where part of the extension. In order to avoid duplication
-the snippets are now included only to this extension and if you want to use them you have to install it explicitly. 
+the snippets are now included only to this extension and if you want to use them you have to install it explicitly.
 
 ## Usage
-When installing the extension React development could be really fun 
+When installing the extension React development could be really fun
 ![create react component](images/component.gif)
 
 As VS Code from version 0.10.10 supports React components syntax inside js files the snippets are available for JavaScript language as well.
@@ -39,6 +39,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rcfc→`  | class component skeleton that contains all the lifecycle methods |
 | `rsc→`   | stateless component skeleton |
 | `rscp→`  | stateless component with prop types skeleton |
+| `rpt→`   | empty propTypes declaration |
 | `con→`   | class default constructor with props|
 | `conc→`  | class default constructor with props and context |
 | `est→`   | empty state object |
@@ -63,7 +64,6 @@ For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates t
 
 | Trigger  | Content |
 | -------: | ------- |
-| `rpt→`   | empty propTypes declaration |
 | `pta→`   | `PropTypes.array,` |
 | `ptar→`  | `PropTypes.array.isRequired,` |
 | `ptb→`   | `PropTypes.bool,` |
