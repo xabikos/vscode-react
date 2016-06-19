@@ -41,6 +41,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rscp→`  | stateless component with prop types skeleton |
 | `con→`   | class default constructor with props|
 | `conc→`  | class default constructor with props and context |
+| `est→`   | empty state object |
 | `cwm→`   | `componentWillMount method` |
 | `cdm→`   | `componentDidMount method` |
 | `cwr→`   | `componentWillReceiveProps method` |
@@ -62,6 +63,7 @@ For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates t
 
 | Trigger  | Content |
 | -------: | ------- |
+| `rpt→`   | empty propTypes declaration |
 | `pta→`   | `PropTypes.array,` |
 | `ptar→`  | `PropTypes.array.isRequired,` |
 | `ptb→`   | `PropTypes.bool,` |
