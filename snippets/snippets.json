@@ -126,7 +126,7 @@
   "bindThis": {
     "prefix": "bnd",
 	"body": "this.$1 = this.$1.bind(this);$0",
-	"description": "Access component's state"
+	"description": "Binds the this of a method. To be used inside a constructor"
   },
   
   "propTypes": {
