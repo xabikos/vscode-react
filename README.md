@@ -43,11 +43,12 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rccp→`  | class component skeleton with prop types after the class |
 | `rcjc→`  | class component skeleton without import and default export lines |
 | `rcfc→`  | class component skeleton that contains all the lifecycle methods |
-| `rsc→`   | stateless component skeleton |
+| `rsc→`   | inline stateless component skeleton |
+| `rscb→`  | stateless component skeleton |
 | `rscp→`  | stateless component with prop types skeleton |
 | `rmcc→`  | mobx class component skeleton |
-| `rmsc→`  | mobx stateless component skeleton |
-| `rmscb→` | mobx stateless component with braces skeleton |
+| `rmsc→`  | mobx inline stateless component skeleton |
+| `rmscb→` | mobx stateless component skeleton |
 | `rpt→`   | empty propTypes declaration |
 | `con→`   | class default constructor with props|
 | `conc→`  | class default constructor with props and context |
