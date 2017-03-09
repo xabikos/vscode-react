@@ -47,6 +47,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rscp→`  | stateless component with prop types skeleton |
 | `rmcc→`  | mobx class component skeleton |
 | `rmsc→`  | mobx stateless component skeleton |
+| `rmscb→` | mobx stateless component with braces skeleton |
 | `rpt→`   | empty propTypes declaration |
 | `con→`   | class default constructor with props|
 | `conc→`  | class default constructor with props and context |

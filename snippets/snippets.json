@@ -1,48 +1,58 @@
 {
   "reactClassCompoment": {
     "prefix": "rcc",
-    "body": "import React, {Component} from 'react';\n\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n",
-    "description": "Creates a React component class with ES6 module system"
+    "body": "import React, {Component} from 'react';\n\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
+    "description": "Creates a React component class with default export"
   },
 
   "reactMobxClassCompoment": {
     "prefix": "rmcc",
-    "body": "import React, {Component} from 'react';\nimport {observer} from 'mobx-react';\n\n@observer\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n",
-    "description": "Creates a React component class with ES6 module system"
+    "body": "import React, {Component} from 'react';\nimport {observer} from 'mobx-react';\n\n@observer\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
+    "description": "Creates a React component class with default export"
   },  
 
   "reactJustClassCompoment": {
     "prefix": "rcjc",
     "body": "class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n",
-    "description": "Creates a React component class with ES6 module system"
+    "description": "Creates a React component class"
   },
 
   "reactClassCompomentPropTypes": {
     "prefix": "rccp",
-    "body": "import React, {Component, PropTypes} from 'react';\n\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
-    "description": "Creates a React component class with PropTypes and ES6 module system"
+    "body": "import React, {Component, PropTypes} from 'react';\n\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};",
+    "description": "Creates a React component class with PropTypes and default export"
   },
 
   "reactClassCompomentWithMethods": {
     "prefix": "rcfc",
-    "body": "import React, {Component, PropTypes} from 'react';\n\nclass ${1:componentName} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t}\n\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\n\t}\n\n\tcomponentWillReceiveProps(nextProps) {\n\n\t}\n\n\tshouldComponentUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate(prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
-    "description": "Creates a React component class with PropTypes and all lifecycle methods and ES6 module system"
+    "body": "import React, {Component, PropTypes} from 'react';\n\nexport default class ${1:componentName} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t}\n\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\n\t}\n\n\tcomponentWillReceiveProps(nextProps) {\n\n\t}\n\n\tshouldComponentUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate(prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};",
+    "description": "Creates a React component class with PropTypes, all lifecycle methods and default export"
   },
 
   "reactStateless": {
     "prefix": "rsc",
-    "body": "import React from 'react';\n\nexport default () => (\n\t<div>\n\t\t$0\n\t</div>\n);\n\n",
-    "description": "Creates a stateless React component without PropTypes and ES6 module system"
+    "body": "import React from 'react';\n\nexport default () => (\n\t<div>\n\t\t$0\n\t</div>\n);",
+    "description": "Creates an inline stateless React component with default export"
   },
+  "reactStatelessBraces": {
+    "prefix": "rscb",
+    "body": "import React from 'react';\n\nexport default () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n};",
+    "description": "Creates a stateless React component with default export"
+  },  
   "reactMobxStateless": {
     "prefix": "rmsc",
-    "body": "import React from 'react';\nimport {observer} from 'mobx-react';\n\nexport default observer(() => (\n\t<div>\n\t\t$0\n\t</div>\n));\n\n",
-    "description": "Creates a stateless React component without PropTypes and ES6 module system"
-  },  
+    "body": "import React from 'react';\nimport {observer} from 'mobx-react';\n\nexport default observer(() => (\n\t<div>\n\t\t$0\n\t</div>\n));",
+    "description": "Creates an inline MobX stateless React component with default export"
+  },
+  "reactMobxStatelessBraces": {
+    "prefix": "rmscb",
+    "body": "import React from 'react';\nimport {observer} from 'mobx-react';\n\nexport default observer(() => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n});",
+    "description": "Creates a MobX stateless React component with default export"
+  },
   "reactStatelessProps": {
     "prefix": "rscp",
     "body": "import React, {PropTypes} from 'react';\n\nconst ${1:componentName} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};\n\n${1:componentName}.propTypes = {\n\t$0\n};\n\nexport default ${1:componentName};",
-    "description": "Creates a stateless React component with PropTypes and ES6 module system"
+    "description": "Creates a stateless React component with PropTypes and default export"
   },
 
   "classConstructor": {
@@ -59,7 +69,13 @@
   "emptyState": {
     "prefix": "est",
     "body": "this.state = {\n\t$1\n};",
-    "description": "Creates empty state object. To be used in a constructor."
+    "description": "Creates an empty state object. To be used in a constructor."
+  },
+
+  "emptyStateProp": {
+    "prefix": "estp",
+    "body": "state = {$1};",
+    "description": "Creates an empty state object. To be used as a class property."
   },
 
   "componentWillMount": {
