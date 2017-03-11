@@ -5,25 +5,42 @@
     "description": "Creates a React component class with default export"
   },
   "reactJustClassCompoment": {
-    "prefix": "rcjc",
-    "body": "class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n",
+    "prefix": "rjcc",
+    "body": "class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
     "description": "Creates a React component class"
   },
+  "reactClassCompomentPropTypes": {
+    "prefix": "rccp",
+    "body": "import React, {Component, PropTypes} from 'react';\n\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\t$2\n};",
+    "description": "Creates a React component class with PropTypes and default export"
+  },
+  "reactJustClassCompomentProps": {
+    "prefix": "rjccp",
+    "body": "class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n$2\n};",
+    "description": "Creates a React component class with PropTypes"
+  },
+
   "reactMobxClassCompoment": {
     "prefix": "rmcc",
-    "body": "import React, {Component} from 'react';\nimport {observer} from 'mobx-react';\n\n@observer\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
+    "body": "import React, {Component, PropTypes} from 'react';\nimport {observer} from 'mobx-react';\n\n@observer\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
     "description": "Creates a MobX React component class with default export"
   },
   "reactMobxJustClassCompoment": {
     "prefix": "rmjcc",
-    "body": "@observer\nclass ${componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
+    "body": "@observer\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
     "description": "Creates a MobX React component class"
   },
-  "reactClassCompomentPropTypes": {
-    "prefix": "rccp",
-    "body": "import React, {Component, PropTypes} from 'react';\n\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};",
-    "description": "Creates a React component class with PropTypes and default export"
+  "reactMobxClassCompomentProps": {
+    "prefix": "rmccp",
+    "body": "import React, {Component, PropTypes} from 'react';\nimport {observer} from 'mobx-react';\n\n@observer\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\t$2\n};",
+    "description": "Creates a MobX React component class with PropTypes and default export"
   },
+  "reactMobxJustClassCompomentProps": {
+    "prefix": "rmjccp",
+    "body": "@observer\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\t$2\n};",
+    "description": "Creates a MobX React component class with PropTypes"
+  },
+  
 
   "reactClassCompomentWithMethods": {
     "prefix": "rcfc",
@@ -31,9 +48,10 @@
     "description": "Creates a React component class with PropTypes, all lifecycle methods and default export"
   },
 
+
   "reactStateless": {
     "prefix": "rsc",
-    "body": "import React from 'react';\n\nexport default (${1:props}) => (\n\t<div>\n\t\t$1\n\t</div>\n);",
+    "body": "import React from 'react';\n\nexport default (${1:props}) => (\n\t<div>\n\t\t$0\n\t</div>\n);",
     "description": "Creates an inline SFC with default export"
   },
   "reactStatelessBraces": {
@@ -43,14 +61,38 @@
   },
   "reactJustInlineStateless": {
     "prefix": "rjsc",
-    "body": "const ${1:componentName} = (${2:props}) => (\n\t<div>\n\t\t$2\n\t</div>\n);",
+    "body": "const ${1:componentName} = (${2:props}) => (\n\t<div>\n\t\t$0\n\t</div>\n);",
     "description": "Creates an inline SFC"
   },
   "reactJustStateless": {
     "prefix": "rjscb",
-    "body": "const ${1:componentName} = (${2:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t</div>\n\t);\n};",
+    "body": "const ${1:componentName} = (${2:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n};",
     "description": "Creates an SFC"
-  },  
+  },
+
+  "reactStatelessProps": {
+    "prefix": "rscp",
+    "body": "import React, {PropTypes} from 'react';\n\nconst ${1:componentName} = (${2:props}) => (\n\t<div>\n\t\t$0\n\t</div>\n);\n\n${1:componentName}.propTypes = {\n\t$3\n};\n\nexport default ${1:componentName};",
+    "description": "Creates an inline SFC with PropTypes and default export"
+  },
+  "reactStatelessBracesProps": {
+    "prefix": "rscbp",
+    "body": "import React, {PropTypes} from 'react';\n\nconst ${1:componentName} = (${2:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n};\n\n${1:componentName}.propTypes = {\n\t$3\n};\n\nexport default ${1:componentName};",
+    "description": "Creates an SFC with PropTypes and default export"
+  },
+  "reactJustInlineStatelessProps": {
+    "prefix": "rjscp",
+    "body": "const ${1:componentName} = (${2:props}) => (\n\t<div>\n\t\t$0\n\t</div>\n);\n\n${1:componentName}.propTypes = {\n\t$3\n};\n\nexport default ${1:componentName};",
+    "description": "Creates an inline SFC with PropTypes"
+  },
+  "reactJustStatelessProps": {
+    "prefix": "rjscbp",
+    "body": "const ${1:componentName} = (${2:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n};\n\n${1:componentName}.propTypes = {\n\t$3\n};\n\nexport default ${1:componentName};",
+    "description": "Creates an SFC with PropTypes"
+  },
+
+
+
   "reactMobxStateless": {
     "prefix": "rmsc",
     "body": "import React from 'react';\nimport {observer} from 'mobx-react';\n\nexport default observer((${1:props}) => (\n\t<div>\n\t\t$0\n\t</div>\n));",
@@ -71,11 +113,29 @@
     "body": "const ${1:componentName} = observer((${2:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n});",
     "description": "Creates a MobX SFC"
   },
-  "reactStatelessProps": {
-    "prefix": "rscp",
-    "body": "import React, {PropTypes} from 'react';\n\nconst ${1:componentName} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};\n\n${1:componentName}.propTypes = {\n\t$0\n};\n\nexport default ${1:componentName};",
-    "description": "Creates an SFC with PropTypes and default export"
+  "reactMobxStatelessProps": {
+    "prefix": "rmscp",
+    "body": "import React from 'react';\nimport {observer} from 'mobx-react';\n\nconst ${1:componentName} = observer((${2:props}) => (\n\t<div>\n\t\t$0\n\t</div>\n));\n\n${1:componentName}.propTypes = {\n\t$3\n};\n\nexport default ${1:componentName};",
+    "description": "Creates an inline MobX SFC with default export"
   },
+  "reactMobxStatelessBracesProps": {
+    "prefix": "rmscbp",
+    "body": "import React from 'react';\nimport {observer} from 'mobx-react';\n\nconst ${1:componentName} = observer((${2:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n});\n\n${1:componentName}.propTypes = {\n\t$3\n};\n\nexport default ${1:componentName};",
+    "description": "Creates a MobX SFC with default export"
+  },
+  "reactJustMobxInlineStatelessProps": {
+    "prefix": "rmjscp",
+    "body": "const ${1:componentName} = observer((${2:props}) => (\n\t<div>\n\t\t$0\n\t</div>\n));\n\n${1:componentName}.propTypes = {\n\t$3\n};\n\n",
+    "description": "Creates an inline MobX SFC"
+  },
+  "reactJustMobxStatelessProps": {
+    "prefix": "rmjscbp",
+    "body": "const ${1:componentName} = observer((${2:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n});\n\n${1:componentName}.propTypes = {\n\t$3\n};\n\n",
+    "description": "Creates a MobX SFC"
+  },  
+
+
+
 
   "classConstructor": {
     "prefix": "con",
