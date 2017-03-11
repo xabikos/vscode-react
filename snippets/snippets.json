@@ -4,19 +4,21 @@
     "body": "import React, {Component} from 'react';\n\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
     "description": "Creates a React component class with default export"
   },
-
-  "reactMobxClassCompoment": {
-    "prefix": "rmcc",
-    "body": "import React, {Component} from 'react';\nimport {observer} from 'mobx-react';\n\n@observer\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
-    "description": "Creates a React component class with default export"
-  },  
-
   "reactJustClassCompoment": {
     "prefix": "rcjc",
     "body": "class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n",
     "description": "Creates a React component class"
   },
-
+  "reactMobxClassCompoment": {
+    "prefix": "rmcc",
+    "body": "import React, {Component} from 'react';\nimport {observer} from 'mobx-react';\n\n@observer\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
+    "description": "Creates a MobX React component class with default export"
+  },
+  "reactMobxJustClassCompoment": {
+    "prefix": "rmjcc",
+    "body": "@observer\nclass ${componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}",
+    "description": "Creates a MobX React component class"
+  },
   "reactClassCompomentPropTypes": {
     "prefix": "rccp",
     "body": "import React, {Component, PropTypes} from 'react';\n\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};",
@@ -31,28 +33,48 @@
 
   "reactStateless": {
     "prefix": "rsc",
-    "body": "import React from 'react';\n\nexport default () => (\n\t<div>\n\t\t$0\n\t</div>\n);",
-    "description": "Creates an inline stateless React component with default export"
+    "body": "import React from 'react';\n\nexport default (${1:props}) => (\n\t<div>\n\t\t$1\n\t</div>\n);",
+    "description": "Creates an inline SFC with default export"
   },
   "reactStatelessBraces": {
     "prefix": "rscb",
-    "body": "import React from 'react';\n\nexport default () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n};",
-    "description": "Creates a stateless React component with default export"
+    "body": "import React from 'react';\n\nexport default (${1:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n};",
+    "description": "Creates an SFC with default export"
+  },
+  "reactJustInlineStateless": {
+    "prefix": "rjsc",
+    "body": "const ${1:componentName} = (${2:props}) => (\n\t<div>\n\t\t$2\n\t</div>\n);",
+    "description": "Creates an inline SFC"
+  },
+  "reactJustStateless": {
+    "prefix": "rjscb",
+    "body": "const ${1:componentName} = (${2:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t</div>\n\t);\n};",
+    "description": "Creates an SFC"
   },  
   "reactMobxStateless": {
     "prefix": "rmsc",
-    "body": "import React from 'react';\nimport {observer} from 'mobx-react';\n\nexport default observer(() => (\n\t<div>\n\t\t$0\n\t</div>\n));",
-    "description": "Creates an inline MobX stateless React component with default export"
+    "body": "import React from 'react';\nimport {observer} from 'mobx-react';\n\nexport default observer((${1:props}) => (\n\t<div>\n\t\t$0\n\t</div>\n));",
+    "description": "Creates an inline MobX SFC with default export"
   },
   "reactMobxStatelessBraces": {
     "prefix": "rmscb",
-    "body": "import React from 'react';\nimport {observer} from 'mobx-react';\n\nexport default observer(() => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n});",
-    "description": "Creates a MobX stateless React component with default export"
+    "body": "import React from 'react';\nimport {observer} from 'mobx-react';\n\nexport default observer((${1:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n});",
+    "description": "Creates a MobX SFC with default export"
+  },
+  "reactJustMobxInlineStateless": {
+    "prefix": "rmjsc",
+    "body": "const ${1:componentName} = observer((${2:props}) => (\n\t<div>\n\t\t$0\n\t</div>\n));",
+    "description": "Creates an inline MobX SFC"
+  },
+  "reactJustMobxStateless": {
+    "prefix": "rmjscb",
+    "body": "const ${1:componentName} = observer((${2:props}) => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n});",
+    "description": "Creates a MobX SFC"
   },
   "reactStatelessProps": {
     "prefix": "rscp",
     "body": "import React, {PropTypes} from 'react';\n\nconst ${1:componentName} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};\n\n${1:componentName}.propTypes = {\n\t$0\n};\n\nexport default ${1:componentName};",
-    "description": "Creates a stateless React component with PropTypes and default export"
+    "description": "Creates an SFC with PropTypes and default export"
   },
 
   "classConstructor": {
