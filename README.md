@@ -47,7 +47,6 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rmjcc→` | mobx class component skeleton without import or default export |
 | `rmccp→` | mobx class component default export skeleton with prop types |
 | `rmjccp→`| mobx class component skeleton with prop types, without import or default export |
-
 | `rsc→`   | inline SFC default export skeleton |
 | `rscb→`  | SFC default export skeleton |
 | `rjsc→`  | inline SFC without import or export |
@@ -56,7 +55,6 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rscbp→` | SFC with prop types default export skeleton |
 | `rjscp→` | inline SFC with prop types, without import or export |
 | `rjscbp→`| SFC with prop types, without import or export |
-
 | `rmsc→`   | mobx inline SFC default export skeleton |
 | `rmscb→`  | mobx SFC default export skeleton |
 | `rmjsc→`  | mobx inline SFC without import or export |
@@ -65,9 +63,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rmscbp→` | mobx SFC with prop types default export skeleton |
 | `rmjscp→` | mobx inline SFC with prop types, without import or export |
 | `rmjscbp→`| mobx SFC with prop types, without import or export |
-
 | `rcfc→`  | class component skeleton that contains all the lifecycle methods |
-
 | `rpt→`   | empty propTypes declaration |
 | `con→`   | class default constructor with props|
 | `conc→`  | class default constructor with props and context |
