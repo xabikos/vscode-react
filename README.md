@@ -39,12 +39,31 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 | Trigger  | Content |
 | -------: | ------- |
-| `rcc→`   | class component skeleton |
-| `rccp→`  | class component skeleton with prop types after the class |
-| `rcjc→`  | class component skeleton without import and default export lines |
+| `rcc→`   | class component default export skeleton |
+| `rjcc→`  | class component skeleton without import of default export |
+| `rccp→`  | class component default export skeleton with prop types |
+| `rjccp→` | class component skeleton with prop types, without import or default export |
+| `rmcc→`  | mobx class component default export skeleton |
+| `rmjcc→` | mobx class component skeleton without import or default export |
+| `rmccp→` | mobx class component default export skeleton with prop types |
+| `rmjccp→`| mobx class component skeleton with prop types, without import or default export |
+| `rsc→`   | inline SFC default export skeleton |
+| `rscb→`  | SFC default export skeleton |
+| `rjsc→`  | inline SFC without import or export |
+| `rjscb→` | SFC without import or export |
+| `rscp→`  | inline SFC with prop types default export skeleton |
+| `rscbp→` | SFC with prop types default export skeleton |
+| `rjscp→` | inline SFC with prop types, without import or export |
+| `rjscbp→`| SFC with prop types, without import or export |
+| `rmsc→`   | mobx inline SFC default export skeleton |
+| `rmscb→`  | mobx SFC default export skeleton |
+| `rmjsc→`  | mobx inline SFC without import or export |
+| `rmjscb→` | mobx SFC without import or export |
+| `rmscp→`  | mobx inline SFC with prop types default export skeleton |
+| `rmscbp→` | mobx SFC with prop types default export skeleton |
+| `rmjscp→` | mobx inline SFC with prop types, without import or export |
+| `rmjscbp→`| mobx SFC with prop types, without import or export |
 | `rcfc→`  | class component skeleton that contains all the lifecycle methods |
-| `rsc→`   | stateless component skeleton |
-| `rscp→`  | stateless component with prop types skeleton |
 | `rpt→`   | empty propTypes declaration |
 | `con→`   | class default constructor with props|
 | `conc→`  | class default constructor with props and context |
