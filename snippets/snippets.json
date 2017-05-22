@@ -23,6 +23,12 @@
     "description": "Creates a React component class with PropTypes and all lifecycle methods and ES6 module system"
   },
 
+	"reactWithWebpackDefaults": {
+		"prefix": "rwwd",
+		"body": "class ${1:componentName} extends React.Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t\tthis.state={};\n\n\t}\n\n\trender() {\n\t\treturn(\n\t\t\t<div>\n\n\t\t\t$0</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
+		"description": "Creates a React component class with constructor, empty state, proptypes and export in ES6 module system without imports. (Mostly used when React, Proptypes are provided by webpack provide plugin)"
+	},
+
   "reactStateless": {
     "prefix": "rsc",
     "body": "import React from 'react';\n\nconst ${1:componentName} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n};\n\nexport default ${1:componentName};",
