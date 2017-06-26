@@ -1,23 +1,23 @@
 {
-  "reactClassCompoment": {
+  "reactClassComponent": {
     "prefix": "rcc",
     "body": "import React, { Component } from 'react';\n\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default ${1:componentName};",
     "description": "Creates a React component class with ES6 module system"
   },
 
-  "reactJustClassCompoment": {
+  "reactJustClassComponent": {
     "prefix": "rcjc",
     "body": "class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n",
     "description": "Creates a React component class with ES6 module system"
   },
 
-  "reactClassCompomentPropTypes": {
+  "reactClassComponentPropTypes": {
     "prefix": "rccp",
     "body": "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\n\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
     "description": "Creates a React component class with PropTypes and ES6 module system"
   },
 
-  "reactClassCompomentWithMethods": {
+  "reactClassComponentWithMethods": {
     "prefix": "rcfc",
     "body": "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\n\nclass ${1:componentName} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t}\n\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\n\t}\n\n\tcomponentWillReceiveProps(nextProps) {\n\n\t}\n\n\tshouldComponentUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate(prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
     "description": "Creates a React component class with PropTypes and all lifecycle methods and ES6 module system"
