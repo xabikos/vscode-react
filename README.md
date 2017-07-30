@@ -40,6 +40,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | Trigger  | Content |
 | -------: | ------- |
 | `rcc→`   | class component skeleton |
+| `rrc→`   | class component skeleton with react-redux connect |
 | `rccp→`  | class component skeleton with prop types after the class |
 | `rcjc→`  | class component skeleton without import and default export lines |
 | `rcfc→`  | class component skeleton that contains all the lifecycle methods |
