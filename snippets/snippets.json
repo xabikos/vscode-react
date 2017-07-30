@@ -5,6 +5,12 @@
     "description": "Creates a React component class with ES6 module system"
   },
 
+  "reactReduxComponent": {
+    "prefix": "rrc",
+    "body": "import React, { Component } from 'react';\n\nfunction mapStateToProps(state) {\n\treturn {\n\n\t};\n}\n\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default connect(\n\tmapStateToProps,\n)(${1:componentName});",
+    "description": "Creates a React component class connected to redux"
+  },
+
   "reactJustClassComponent": {
     "prefix": "rcjc",
     "body": "class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n",
