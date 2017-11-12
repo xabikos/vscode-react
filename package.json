@@ -1,7 +1,7 @@
 {
   "name": "ReactSnippets",
   "description": "Code snippets for Reactjs development in ES6 syntax",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "displayName": "Reactjs code snippets",
   "publisher": "xabikos",
   "icon": "images/react.png",
