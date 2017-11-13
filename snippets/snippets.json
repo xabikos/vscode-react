@@ -105,7 +105,7 @@
     "description": "Invoked immediately before a component is unmounted from the DOM."
   },
 
-   "componentRender": {
+  "componentRender": {
     "prefix": "ren",
     "body": "render() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n}",
     "description": "When called, it should examine this.props and this.state and return a single child element."
@@ -125,7 +125,7 @@
 
   "componentProps": {
     "prefix": "props",
-    "body":"this.props.$0",
+    "body": "this.props.$0",
     "description": "Access component's props"
   },
 
@@ -137,14 +137,20 @@
 
   "bindThis": {
     "prefix": "bnd",
-	"body": "this.$1 = this.$1.bind(this);$0",
-	"description": "Binds the this of a method. To be used inside a constructor"
+    "body": "this.$1 = this.$1.bind(this);$0",
+    "description": "Binds the this of a method. To be used inside a constructor"
   },
 
   "propTypes": {
-	"prefix": "rpt",
-	"body": "$1.propTypes = {\n\t$2\n};",
-	"description": "Creates empty propTypes declaration"
+    "prefix": "rpt",
+    "body": "$1.propTypes = {\n\t$2\n};",
+    "description": "Creates empty propTypes declaration"
+  },
+
+  "propTypes": {
+    "prefix": "rdp",
+    "body": "$1.defaultProps = {\n\t$2\n};",
+    "description": "Creates empty defaultProps declaration"
   },
 
   "propTypeArray": {
@@ -267,7 +273,7 @@
     "body": "PropTypes.arrayOf($0).isRequired,",
     "description": "An array of a certain type required"
   },
-    "propTypeObjectOf": {
+  "propTypeObjectOf": {
     "prefix": "ptoo",
     "body": "PropTypes.objectOf($0),",
     "description": "An object with property values of a certain type"
