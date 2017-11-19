@@ -45,6 +45,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rcjc→`  | class component skeleton without import and default export lines |
 | `rcfc→`  | class component skeleton that contains all the lifecycle methods |
 | `rwwd→`  | class component without import statements |
+| `rpc→`   | class pure component skeleton with prop types after the class |
 | `rsc→`   | stateless component skeleton |
 | `rscp→`  | stateless component with prop types skeleton |
 | `rpt→`   | empty propTypes declaration |
