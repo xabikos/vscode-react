@@ -1,54 +1,54 @@
 {
   "reactClassComponent": {
     "prefix": "rcc",
-    "body": "import React, { Component } from 'react';\n\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default ${1:componentName};",
+    "body": "import React, { Component } from 'react';\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
     "description": "Creates a React component class with ES6 module system"
   },
 
   "reactReduxComponent": {
     "prefix": "rrc",
-    "body": "import React, { Component } from 'react';\nimport { connect } from 'react-redux';\n\nfunction mapStateToProps(state) {\n\treturn {\n\n\t};\n}\n\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default connect(\n\tmapStateToProps,\n)(${1:componentName});",
+    "body": "import React, { Component } from 'react';\nimport { connect } from 'react-redux';\n\nfunction mapStateToProps(state) {\n\treturn {\n\n\t};\n}\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default connect(\n\tmapStateToProps,\n)(${1:${TM_FILENAME_BASE}});",
     "description": "Creates a React component class connected to redux"
   },
 
   "reactJustClassComponent": {
     "prefix": "rcjc",
-    "body": "class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n",
+    "body": "class ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n",
     "description": "Creates a React component class with ES6 module system"
   },
 
   "reactClassComponentPropTypes": {
     "prefix": "rccp",
-    "body": "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\n\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
+    "body": "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
     "description": "Creates a React component class with PropTypes and ES6 module system"
   },
 
   "reactClassComponentWithMethods": {
     "prefix": "rcfc",
-    "body": "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\n\nclass ${1:componentName} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t}\n\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\n\t}\n\n\tcomponentWillReceiveProps(nextProps) {\n\n\t}\n\n\tshouldComponentUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate(prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
+    "body": "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t}\n\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\n\t}\n\n\tcomponentWillReceiveProps(nextProps) {\n\n\t}\n\n\tshouldComponentUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate(prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
     "description": "Creates a React component class with PropTypes and all lifecycle methods and ES6 module system"
   },
 
   "reactWithWebpackDefaults": {
     "prefix": "rwwd",
-    "body": "class ${1:componentName} extends React.Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t\tthis.state = {};\n\n\t}\n\n\trender() {\n\t\treturn(\n\t\t\t<div>\n\n\t\t\t$0</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
+    "body": "class ${1:${TM_FILENAME_BASE}} extends React.Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t\tthis.state = {};\n\n\t}\n\n\trender() {\n\t\treturn(\n\t\t\t<div>\n\n\t\t\t$0</div>\n\t\t);\n\t}\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
     "description": "Creates a React component class with constructor, empty state, proptypes and export in ES6 module system without imports. (Mostly used when React, Proptypes are provided by webpack provide plugin)"
   },
 
   "reactPureComponent": {
     "prefix": "rpc",
-    "body": "import React, { PureComponent } from 'react';\nimport PropTypes from 'prop-types';\n\nclass ${1:componentName} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
+    "body": "import React, { PureComponent } from 'react';\nimport PropTypes from 'prop-types';\n\nclass ${1:${TM_FILENAME_BASE}} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
     "description": "Creates a React pure component class with PropTypes and ES6 module system"
   },
 
   "reactStateless": {
     "prefix": "rsc",
-    "body": "import React from 'react';\n\nconst ${1:componentName} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n};\n\nexport default ${1:componentName};",
+    "body": "import React from 'react';\n\nconst ${1:${TM_FILENAME_BASE}} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
     "description": "Creates a stateless React component without PropTypes and ES6 module system"
   },
   "reactStatelessProps": {
     "prefix": "rscp",
-    "body": "import React from 'react';\nimport PropTypes from 'prop-types';\n\nconst ${1:componentName} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};\n\n${1:componentName}.propTypes = {\n\t$0\n};\n\nexport default ${1:componentName};",
+    "body": "import React from 'react';\nimport PropTypes from 'prop-types';\n\nconst ${1:${TM_FILENAME_BASE}} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
     "description": "Creates a stateless React component with PropTypes and ES6 module system"
   },
 
