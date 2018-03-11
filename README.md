@@ -19,6 +19,9 @@ There you have either the option to show the already installed snippets or insta
 * JavaScript React (.jsx)
 * TypeScript React (.tsx)
 
+## Breaking change in version 2.0.0
+Removed support for jsx language as it was giving errors in developer tools (#39)
+
 ## Breaking change in version 1.0.0
 Up until verion 1.0.0 all the [JavaScript snippets][javacript] where part of the extension. In order to avoid duplication
 the snippets are now included only to this extension and if you want to use them you have to install it explicitly.
