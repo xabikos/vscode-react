@@ -36,10 +36,6 @@
       {
         "language": "typescriptreact",
         "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "jsx",
-        "path": "./snippets/snippets.json"
       }
     ]
   }
