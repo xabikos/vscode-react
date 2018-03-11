@@ -20,7 +20,7 @@ There you have either the option to show the already installed snippets or insta
 * TypeScript React (.tsx)
 
 ## Breaking change in version 2.0.0
-Removed support for jsx language as it was giving errors in developer tools (#39)
+Removed support for jsx language as it was giving errors in developer tools [#39](https://github.com/xabikos/vscode-react/issues/39)
 
 ## Breaking change in version 1.0.0
 Up until verion 1.0.0 all the [JavaScript snippets][javacript] where part of the extension. In order to avoid duplication
