@@ -289,6 +289,16 @@
     "body": "PropTypes.objectOf($0).isRequired,",
     "description": "An object with property values of a certain type required"
   },
+  "propTypeObjectOfShape": {
+    "prefix": "ptoos",
+    "body": "PropTypes.objectOf(PropTypes.shape($0)),",
+    "description": "An object whose keys are known ahead of time"
+  },
+  "propTypeObjectOfShapeRequired": {
+    "prefix": "ptoosr",
+    "body": "PropTypes.objectOf(PropTypes.shape($0)).isRequired,",
+    "description": "An object whose keys are known ahead of time required"
+  },
   "propTypeShape": {
     "prefix": "ptsh",
     "body": "PropTypes.shape({\n\t$0\n}),",

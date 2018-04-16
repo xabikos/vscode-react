@@ -102,6 +102,8 @@ For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates t
 | `ptaor→` | `PropTypes.arrayOf(PropTypes.number).isRequired,` |
 | `ptoo→`  | `PropTypes.objectOf(PropTypes.number),` |
 | `ptoor→` | `PropTypes.objectOf(PropTypes.number).isRequired,` |
+| `ptoos→` | `PropTypes.objectOf(PropTypes.shape()),` |
+| `ptoosr→`| `PropTypes.objectOf(PropTypes.shape()).isRequired,` |
 | `ptsh→`  | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),` |
 | `ptshr→` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired,` |
 
