@@ -62,6 +62,9 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `cwup→`  | `componentWillUpdate method` |
 | `cdup→`  | `componentDidUpdate method` |
 | `cwun→`  | `componentWillUnmount method` |
+| `gsbu→`  | `getSnapshotBeforeUpdate method` |
+| `gdsfp→` | `static getDerivedStateFromProps method` |
+| `cdc→`   | `componentDidCatch method` |
 | `ren→`   | `render method` |
 | `sst→`   | `this.setState with object as parameter` |
 | `ssf→`   | `this.setState with function as parameter` |
