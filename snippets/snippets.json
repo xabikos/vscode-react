@@ -84,7 +84,7 @@
   "componentWillReceiveProps": {
     "prefix": "cwr",
     "body": "componentWillReceiveProps(nextProps) {\n\t$0\n}\n",
-    "description": "Invoked when a component is receiving new props. This method is not called for the initial render."
+    "description": "Invoked when a component is receiving new props. This method is not called for the initial render. [DEPRECATION NOTE]: This method is deprecated in React 16.3"
   },
 
   "shouldComponentUpdate": {
@@ -96,7 +96,7 @@
   "componentWillUpdate": {
     "prefix": "cwup",
     "body": "componentWillUpdate(nextProps, nextState) {\n\t$0\n}\n",
-    "description": "Invoked immediately before rendering when new props or state are being received."
+    "description": "Invoked immediately before rendering when new props or state are being received. [DEPRECATION NOTE]: This method is deprecated in React 16.3"
   },
 
   "componentDidUpdate": {
@@ -308,5 +308,20 @@
     "prefix": "ptshr",
     "body": "PropTypes.shape({\n\t$0\n}).isRequired,",
     "description": "An object taking on a particular shape required"
+  },
+  "getSnapshotBeforeUpdate": {
+    "prefix": "gsbu",
+    "body": "getSnapshotBeforeUpdate(prevProps, prevState) {\n\t$0\n}\n",
+    "description": "Invoked right before the most recently rendered output is committed to e.g. the DOM. It enables your component to capture current values"
+  },
+  "getDerivedStateFromProps": {
+    "prefix": "gdsfp",
+    "body": "static getDerivedStateFromProps(nextProps, prevState) {\n\t$0\n}\n",
+    "description": "Invoked after a component is instantiated as well as when it receives new props."
+  },
+  "componentDidCatch": {
+    "prefix": "cdc",
+    "body": "componentDidCatch(error, info) {\n\t$0\n}\n",
+    "description": "Error boundaries catch errors during rendering, in lifecycle methods, and in constructors of the whole tree below them."
   }
 }
