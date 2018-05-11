@@ -50,7 +50,9 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `rpc→`   | class pure component skeleton with prop types after the class |
 | `rsc→`   | stateless component skeleton |
 | `rscp→`  | stateless component with prop types skeleton |
-| `rpt→`   | empty propTypes declaration |
+| `rsf→`   | stateless named function skeleton |
+| `rsfp→`   | stateless named function with prop types skeleton |
+| `rpt→`   | empty propTypes declaration |
 | `rdp→`   | empty defaultProps declaration |
 | `con→`   | class default constructor with props|
 | `conc→`  | class default constructor with props and context |
