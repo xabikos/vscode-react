@@ -51,6 +51,16 @@
     "body": "import React from 'react';\nimport PropTypes from 'prop-types';\n\nconst ${1:${TM_FILENAME_BASE}} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
     "description": "Creates a stateless React component with PropTypes and ES6 module system"
   },
+  "reactStatelessFunction": {
+    "prefix": "rsf",
+    "body": "import React from 'react';\n\nfunction ${1:${TM_FILENAME_BASE}(props) {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a stateless React component as a named function without PropTypes"
+  },
+  "reactStatelessFunctionProps": {
+    "prefix": "rsf",
+    "body": "import React from 'react';\nimport PropTypes from 'prop-types';\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n};\n\nfunction ${1:${TM_FILENAME_BASE}(props) {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a stateless React component as a named function with PropTypes"
+  },
 
   "classConstructor": {
     "prefix": "con",
