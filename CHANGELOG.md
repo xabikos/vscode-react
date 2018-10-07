@@ -1,3 +1,7 @@
+## [2.2.1] - 2018-10-07
+### Updated
+- Minor improvements in Readme and `reactWithWebpackDefaults` component
+
 ## [2.2.0] - 2018-06-24
 ### Added
 - Add snippet for named function stateless component
