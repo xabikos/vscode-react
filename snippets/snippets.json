@@ -51,10 +51,51 @@
     "body": "import React from 'react';\nimport PropTypes from 'prop-types';\n\nconst ${1:${TM_FILENAME_BASE}} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
     "description": "Creates a stateless React component with PropTypes and ES6 module system"
   },
-  "reactStatelessFlow": {
-    "prefix": "rscf",
-    "body": "// @flow \nimport * as React from 'react';\ntype Props = {\n\t$0\n};\nexport const ${1:${TM_FILENAME_BASE}} = (props: Props) => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};};",
+  "flowStatelessComponent": {
+    "prefix": "fsc",
+    "body": "// @flow \nimport * as React from 'react';\ntype Props = {\n\t$0\n};\nexport const ${1:${TM_FILENAME_BASE}} = (props: Props) => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};",
     "description": "Creates a stateless React component with FlowTypes and ES6 module system"
+  },
+  "flowStatelessFunction": {
+    "prefix": "fsf",
+    "body": [
+      "// @flow",
+      "import * as React from 'react';",
+      "type Props = {",
+      "  $0",
+      "};",
+      "export function ${1:${TM_FILENAME_BASE}}(props: Props) {",
+      "  return (",
+      "    <div>",
+      "      ",
+      "    </div>",
+      "  );",
+      "};"
+    ],
+    "description": "Creates a stateless React component as a named function with FlowTypes"
+  },
+  "flowClassComponent": {
+    "prefix": "fcc",
+    "body": [
+      "// @flow",
+      "import * as React from 'react';",
+      "type Props = {",
+      "  $0",
+      "};",
+      "type State = {",
+      "  $1",
+      "};",
+      "export class ${2:${TM_FILENAME_BASE}} extends React.Component<Props, State>{",
+      "  render() {",
+      "    return (",
+      "      <div>",
+      "        ",
+      "      </div>",
+      "    );",
+      "  };",
+      "};"
+    ],
+    "description": "Creates a React component class with FlowTypes"
   },
   "reactStatelessFunction": {
     "prefix": "rsf",
