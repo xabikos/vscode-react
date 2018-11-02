@@ -62,6 +62,12 @@
     "description": "Creates a stateless React component as a named function with PropTypes"
   },
 
+  "reactStatelessImplicitReturn": {
+    "prefix": "rsi",
+    "body": "import React from 'react';\n\nconst ${1:${TM_FILENAME_BASE}} = (props) => (\n\t\t\t$0\n\t);\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a stateless React component without PropTypes and ES6 module system with Implicit Return and props"
+  },
+
   "classConstructor": {
     "prefix": "con",
     "body": "constructor(props) {\n\tsuper(props);\n\t$0\n}\n",
