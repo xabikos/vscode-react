@@ -65,7 +65,7 @@
   "reactStatelessImplicitReturn": {
     "prefix": "rsi",
     "body": "import React from 'react';\n\nconst ${1:${TM_FILENAME_BASE}} = (props) => (\n\t\t\t$0\n\t);\n\nexport default ${1:${TM_FILENAME_BASE}};",
-    "description": "Creates a stateless React component without PropTypes and ES6 module system with Implicit Return and props"
+    "description": "Creates a stateless React component without PropTypes and ES6 module system but with Implicit Return and props"
   },
 
   "classConstructor": {
