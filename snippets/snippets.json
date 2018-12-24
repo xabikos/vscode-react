@@ -9,6 +9,11 @@
     "body": "import React, { Component } from 'react';\nimport { connect } from 'react-redux';\n\nfunction mapStateToProps(state) {\n\treturn {\n\n\t};\n}\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default connect(\n\tmapStateToProps,\n)(${1:${TM_FILENAME_BASE}});",
     "description": "Creates a React component class connected to redux"
   },
+  "reactReduxDispatchComponent": {
+      "prefix": "rrdc",
+      "body": "import React, { Component } from 'react';\nimport { connect } from 'react-redux';\n\nfunction mapStateToProps(state) {\n\treturn {\n\n\t};\n}\n\nfunction mapDispatchToProps(dispatch) {\n\treturn {\n\n\t};\n}\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default connect(\n\tmapStateToProps,\n)(${1:${TM_FILENAME_BASE}});",
+      "description": "Creates a React component class connected to redux with dispatch"
+  },
   "reactJustClassComponent": {
     "prefix": "rcjc",
     "body": "class ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n",
@@ -359,5 +364,10 @@
     "prefix": "cdc",
     "body": "componentDidCatch(error, info) {\n\t$0\n}\n",
     "description": "Error boundaries catch errors during rendering, in lifecycle methods, and in constructors of the whole tree below them."
-  }
+  },
+  "dispatchRedux": {
+    "prefix": "disp",
+    "body": "function mapDispatchToProps(dispatch) {\n\treturn {\n\t}\n\n}",
+    "description": "Adds the redux mapDispatchToProps function"
+  } 
 }
