@@ -369,5 +369,5 @@
     "prefix": "disp",
     "body": "function mapDispatchToProps(dispatch) {\n\treturn {\n\t}\n\n}",
     "description": "Adds the redux mapDispatchToProps function"
-  } 
+  }
 }
