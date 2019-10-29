@@ -105,6 +105,10 @@ For example ```pta``` creates the ```PropTypes.array``` and ```ptar``` creates t
 | `ptor→`  | `PropTypes.object.isRequired,` |
 | `pts→`   | `PropTypes.string,` |
 | `ptsr→`  | `PropTypes.string.isRequired,` |
+| `ptsm→`  | `PropTypes.symbol,` |
+| `ptsmr→` | `PropTypes.symbol.isRequired,` |
+| `ptan→`  | `PropTypes.any,` |
+| `ptanr→` | `PropTypes.any.isRequired,` |
 | `ptnd→`  | `PropTypes.node,` |
 | `ptndr→` | `PropTypes.node.isRequired,` |
 | `ptel→`  | `PropTypes.element,` |

@@ -260,6 +260,26 @@
     "body": "PropTypes.string.isRequired,",
     "description": "String prop type required"
   },
+  "propTypeSymbol": {
+    "prefix": "ptsm",
+    "body": "PropTypes.symbol,",
+    "description": "Symbol prop type"
+  },
+  "propTypeSymbolRequired": {
+    "prefix": "ptsmr",
+    "body": "PropTypes.symbol.isRequired,",
+    "description": "Symbol prop type required"
+  },
+  "propTypeAny": {
+    "prefix": "ptan",
+    "body": "PropTypes.any,",
+    "description": "Any prop type"
+  },
+  "propTypeAnyRequired": {
+    "prefix": "ptanr",
+    "body": "PropTypes.any.isRequired,",
+    "description": "Any prop type required"
+  },
   "propTypeNode": {
     "prefix": "ptnd",
     "body": "PropTypes.node,",
