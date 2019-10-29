@@ -56,6 +56,8 @@ Below is a list of all available snippets and the triggers of each one. The **�
 |   `rpc→` | class pure component skeleton with prop types after the class    |
 |   `rsc→` | stateless component skeleton                                     |
 |  `rscp→` | stateless component with prop types skeleton                     |
+|  `rscm→` | memoize stateless component skeleton                             |
+| `rscpm→` | memoize stateless component with prop types skeleton             |
 |   `rsf→` | stateless named function skeleton                                |
 |  `rsfp→` | stateless named function with prop types skeleton                |
 |   `rsi→` | stateless component with prop types and implicit return          |

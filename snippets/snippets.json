@@ -50,14 +50,14 @@
     "description": "Creates a stateless React component with PropTypes and ES6 module system"
   },
   "reactMemo": {
-     "prefix": "rm",
+     "prefix": "rscm",
      "body": "import React, { memo } from 'react';\n\nconst ${1:${TM_FILENAME_BASE}} = memo(() => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n});\n\nexport default ${1:${TM_FILENAME_BASE}};",
-     "description": "Creates a stateless React component without PropTypes and ES6 module system"
+     "description": "Creates a memoized stateless React component without PropTypes and ES6 module system"
   },
   "reactMemoProps": {
-     "prefix": "rmp",
+     "prefix": "rscpm",
      "body": "import React, { memo } from 'react';\nimport PropTypes from 'prop-types';\n\nconst ${1:${TM_FILENAME_BASE}} = memo((props) => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n});\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
-     "description": "Creates a stateless React component with PropTypes and ES6 module system"
+     "description": "Creates a memoized stateless React component with PropTypes and ES6 module system"
   },
   "flowStatelessComponent": {
     "prefix": "fsc",
