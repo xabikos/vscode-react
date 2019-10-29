@@ -197,7 +197,7 @@
   },
   "defaultProps": {
     "prefix": "rdp",
-    "body": "$1.defaultProps = {\n\t$2\n};",
+    "body": "${1:$TM_FILENAME_BASE}.defaultProps = {\n\t$2\n};",
     "description": "Creates empty defaultProps declaration"
   },
   "propTypeArray": {
