@@ -26,7 +26,7 @@
   },
   "reactClassComponentWithMethods": {
     "prefix": "rcfc",
-    "body": "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.state = {\n\t\t\t\n\t\t}\n\t}\n\n\tstatic getDerivedStateFromProps() {\n\t\treturn null\n\t}\n\n\tcomponentDidMount() {\n\t\t\n\t}\n\n\tshouldComponentUpdate(nextProps, nextState) {\n\t\t\n\t}\n\n\tgetSnapshotBeforeUpdate(prevProps, prevState) {\n\t\t\n\t}\n\n\tcomponentDidUpdate(prevProps, prevState, snapshot) {\n\t\t\n\t}\n\n\tcomponentWillUnmount() {\n\t\t\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "body": "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.state = {\n\t\t\t\n\t\t}\n\t}\n\n\tstatic getDerivedStateFromProps() {\n\t\treturn null\n\t}\n\n\tcomponentDidMount() {\n\t\t\n\t}\n\n\tshouldComponentUpdate(nextProps, nextState) {\n\t\t\n\t}\n\n\tgetSnapshotBeforeUpdate(prevProps, prevState) {\n\t\treturn null\n\t}\n\n\tcomponentDidUpdate(prevProps, prevState, snapshot) {\n\t\t\n\t}\n\n\tcomponentWillUnmount() {\n\t\t\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
     "description": "Creates a React component class with PropTypes and all lifecycle methods and ES6 module system"
   },
   "reactWithWebpackDefaults": {
