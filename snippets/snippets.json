@@ -10,9 +10,9 @@
     "description": "Creates a React component class connected to redux"
   },
   "reactReduxDispatchComponent": {
-      "prefix": "rrdc",
-      "body": "import React, { Component } from 'react';\nimport { connect } from 'react-redux';\n\nfunction mapStateToProps(state) {\n\treturn {\n\n\t};\n}\n\nfunction mapDispatchToProps(dispatch) {\n\treturn {\n\n\t};\n}\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default connect(\n\tmapStateToProps,\n)(${1:${TM_FILENAME_BASE}});",
-      "description": "Creates a React component class connected to redux with dispatch"
+    "prefix": "rrdc",
+    "body": "import React, { Component } from 'react';\nimport { connect } from 'react-redux';\n\nfunction mapStateToProps(state) {\n\treturn {\n\n\t};\n}\n\nfunction mapDispatchToProps(dispatch) {\n\treturn {\n\n\t};\n}\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default connect(\n\tmapStateToProps,\n)(${1:${TM_FILENAME_BASE}});",
+    "description": "Creates a React component class connected to redux with dispatch"
   },
   "reactJustClassComponent": {
     "prefix": "rcjc",
@@ -49,15 +49,20 @@
     "body": "import React from 'react';\nimport PropTypes from 'prop-types';\n\nconst ${1:${TM_FILENAME_BASE}} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
     "description": "Creates a stateless React component with PropTypes and ES6 module system"
   },
+  "reactHookProps": {
+    "prefix": "rhc",
+    "body": "import React,{ useState } from 'react';\nimport PropTypes from 'prop-types';\n\nconst ${1:${TM_FILENAME_BASE}} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a stateless React component with PropTypes and ES6 module system"
+  },
   "reactMemo": {
-     "prefix": "rscm",
-     "body": "import React, { memo } from 'react';\n\nconst ${1:${TM_FILENAME_BASE}} = memo(() => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n});\n\nexport default ${1:${TM_FILENAME_BASE}};",
-     "description": "Creates a memoized stateless React component without PropTypes and ES6 module system"
+    "prefix": "rscm",
+    "body": "import React, { memo } from 'react';\n\nconst ${1:${TM_FILENAME_BASE}} = memo(() => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n});\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a memoized stateless React component without PropTypes and ES6 module system"
   },
   "reactMemoProps": {
-     "prefix": "rscpm",
-     "body": "import React, { memo } from 'react';\nimport PropTypes from 'prop-types';\n\nconst ${1:${TM_FILENAME_BASE}} = memo((props) => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n});\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
-     "description": "Creates a memoized stateless React component with PropTypes and ES6 module system"
+    "prefix": "rscpm",
+    "body": "import React, { memo } from 'react';\nimport PropTypes from 'prop-types';\n\nconst ${1:${TM_FILENAME_BASE}} = memo((props) => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n});\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a memoized stateless React component with PropTypes and ES6 module system"
   },
   "flowStatelessComponent": {
     "prefix": "fsc",
@@ -396,8 +401,23 @@
     "description": "Error boundaries catch errors during rendering, in lifecycle methods, and in constructors of the whole tree below them."
   },
   "dispatchRedux": {
-    "prefix": "disp",
-    "body": "function mapDispatchToProps(dispatch) {\n\treturn {\n\t}\n\n}",
-    "description": "Adds the redux mapDispatchToProps function"
+    "prefix": "disp",
+    "body": "function mapDispatchToProps(dispatch) {\n\treturn {\n\t}\n\n}",
+    "description": "Adds the redux mapDispatchToProps function"
+  },
+  "useEffect": {
+    "prefix": "usf",
+    "body": "useEffect(() => {\n$0\n})",
+    "description": "Adds use effect"
+  },
+  "useEffectUnMount": {
+    "prefix": "usfu",
+    "body": "useEffect(() => {\n$0 return () => {\n$0\n\t}\n})",
+    "description": "Adds use effect"
+  },
+  "useEffectDidMount": {
+    "prefix": "usfd",
+    "body": "useEffect(() => {\n$0\n},[])",
+    "description": "Adds use effect"
   }
 }
